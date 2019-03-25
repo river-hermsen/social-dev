@@ -3,7 +3,7 @@ const isEmpty = require('./is-empty');
 
 module.exports = function validateRegisterInput(data) {
     let errors = {};
-    console.log(data)
+
     if (!validator.isEmail(data.email)) {
         errors.email = 'Email address is not valid';
     }
